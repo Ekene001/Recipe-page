@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: Young;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body{
+    padding: 50px;
+}
+div{
+    margin: 50px 0;
+}
+p{
+    font: 16px/1.8 outfit;
+}
+li{
+    font: 16px/1.8 outfit;
+}
+h1{
+    font: 38px/1.7 Young, sans-serif;
+    font-weight: 400;
+}
+h3{
+    font: 25px/1.5 Young, sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+ul li{
+    list-style-position: inside;
+    color: hsl(30, 10%, 34%);
+    padding: 5px 0;
+}
+ol li{
+    list-style-position: inside;
+    color: hsl(30, 10%, 34%);
+    padding: 5px 0;
+}
+
+.Hero img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.head p{
+    
+    color: hsl(30, 10%, 34%);
+    width: 65%;
+}
+
+.Preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    border-radius: 15px;
+}
+.Preparation h3{
+    color: hsl(332, 51%, 32%);
+    font: 25px/1.5 outfit;
+    font-weight: 600;
+}
+.Nutrition p{
+    font: 16px/1.5 outfit;
+    color: hsl(30, 10%, 34%);
+}
+.box table{
+    width: 100%;
+}
+.box table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    font: 16px/1.5 outfit;
+    padding: 20px 0;
+}
+.box table tr th{
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    
+}
+.box table tr td{
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+    position: relative;
+    right: 50% ;
+}
+
+@media only screen and (max-width:768px){
+    body{
+        padding: 0px;
+    }
+    .head div{
+        margin: 0px;
+        padding: 40px 0;
+    }
+    .head p{
+        width: 100%;
+    }
+    .Hero img{
+        border-radius: 0px;
+    }
+    .first{
+        margin: 50px 20px;
+    }
+    .Nutrition .box{
+        overflow: hidden;
+    }
+}
